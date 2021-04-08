@@ -1,0 +1,30 @@
+[0.035s] Invoking command in '/home/sz/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.103s] [35m[1mScanning dependencies of target cpp_node[0m
+[0.176s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[2.305s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[2.305s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:20:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbind_func_OBJ[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[2.306s]    20 |         auto [01;35m[Kbind_func_OBJ[m[K = std::bind(&MyNode::timer_callback, this);
+[2.306s]       |              [01;35m[K^~~~~~~~~~~~~[m[K
+[3.343s] [100%] [32m[1mLinking CXX executable cpp_node[0m
+[3.548s] [100%] Built target cpp_node
+[3.565s] Invoked command in '/home/sz/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[3.625s] Invoking command in '/home/sz/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --install /home/sz/ros2_ws/build/my_cpp_pkg
+[3.642s] -- Install configuration: ""
+[3.643s] -- Installing: /home/sz/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[3.644s] -- Set runtime path of "/home/sz/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node" to ""
+[3.644s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[3.644s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[3.645s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[3.645s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[3.645s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[3.645s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[3.645s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[3.646s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[3.646s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[3.646s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[3.646s] -- Installing: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[3.646s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[3.647s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[3.647s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[3.648s] -- Up-to-date: /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[3.654s] Invoked command in '/home/sz/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --install /home/sz/ros2_ws/build/my_cpp_pkg

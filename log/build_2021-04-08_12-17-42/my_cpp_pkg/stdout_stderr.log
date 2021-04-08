@@ -1,0 +1,32 @@
+[35m[1mScanning dependencies of target cpp_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:18:60:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kstd::_Bind_helper<false, void (MyNode::*)(), MyNode*>::type[m[K’ {aka ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’} to non-scalar type ‘[01m[Kstd::function<int(int)>[m[K’ requested
+   18 |         std::function<int (int) > bind_func_OBJ = [01;31m[Kstd::bind(&MyNode::timer_callback, this)[m[K;
+      |                                                   [01;31m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:22:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMyNode::create_wall_timer(std::chrono::milliseconds, std::function<int(int)>&)[m[K’
+   22 |         timer_ = this->create_wall_timer(std::chrono::milliseconds(500), bind_func_OBJ[01;31m[K)[m[K;
+      |                                                                                       [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  232 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node.hpp:232:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1221[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+/opt/ros/foxy/include/rclcpp/node_impl.hpp: In substitution of ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr) [with DurationRepT = long int; DurationT = std::ratio<1, 1000>; CallbackT = std::function<int(int)>][m[K’:
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:22:87:[m[K   required from here
+[01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+  109 | [01;31m[KNode[m[K::create_wall_timer(
+      | [01;31m[K^~~~[m[K
+[01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[01m[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:109:1:[m[K [01;36m[Knote: [m[Kinvalid template non-type parameter
+make[2]: *** [CMakeFiles/cpp_node.dir/build.make:63: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,388 @@
+[0.037s] Invoking command in '/home/sz/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.135s] [35m[1mScanning dependencies of target cpp_node[0m
+[0.199s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[2.353s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[2.353s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:67:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kstd::basic_ostream<char>[m[K’ and ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’)
+[2.354s]    21 |         [32m[Kstd::cout << "std::bind(&MyNode::timer_callback, this)= "[m[K [01;31m[K<<[m[K [34m[Kbind_func_OBJ[m[K << '\n';
+[2.354s]       |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~~~[m[K
+[2.354s]       |                   [32m[K|[m[K                                                  [34m[K|[m[K
+[2.354s]       |                   [32m[Kstd::basic_ostream<char>[m[K                           [34m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K
+[2.354s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.355s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.355s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.355s] [01m[K/usr/include/c++/9/ostream:108:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.356s]   108 |       [01;36m[Koperator[m[K<<(__ostream_type& (*__pf)(__ostream_type&))
+[2.356s]       |       [01;36m[K^~~~~~~~[m[K
+[2.356s] [01m[K/usr/include/c++/9/ostream:108:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)[m[K’ {aka ‘[01m[Kstd::basic_ostream<char>& (*)(std::basic_ostream<char>&)[m[K’}
+[2.356s]   108 |       operator<<([01;36m[K__ostream_type& (*__pf)(__ostream_type&)[m[K)
+[2.356s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.356s] [01m[K/usr/include/c++/9/ostream:117:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>][m[K’
+[2.356s]   117 |       [01;36m[Koperator[m[K<<(__ios_type& (*__pf)(__ios_type&))
+[2.357s]       |       [01;36m[K^~~~~~~~[m[K
+[2.357s] [01m[K/usr/include/c++/9/ostream:117:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)[m[K’ {aka ‘[01m[Kstd::basic_ios<char>& (*)(std::basic_ios<char>&)[m[K’}
+[2.357s]   117 |       operator<<([01;36m[K__ios_type& (*__pf)(__ios_type&)[m[K)
+[2.361s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[2.361s] [01m[K/usr/include/c++/9/ostream:127:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.362s]   127 |       [01;36m[Koperator[m[K<<(ios_base& (*__pf) (ios_base&))
+[2.362s]       |       [01;36m[K^~~~~~~~[m[K
+[2.362s] [01m[K/usr/include/c++/9/ostream:127:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kstd::ios_base& (*)(std::ios_base&)[m[K’
+[2.362s]   127 |       operator<<([01;36m[Kios_base& (*__pf) (ios_base&)[m[K)
+[2.362s]       |                  [01;36m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[2.362s] [01m[K/usr/include/c++/9/ostream:166:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.362s]   166 |       [01;36m[Koperator[m[K<<(long __n)
+[2.362s]       |       [01;36m[K^~~~~~~~[m[K
+[2.362s] [01m[K/usr/include/c++/9/ostream:166:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Klong int[m[K’
+[2.362s]   166 |       operator<<([01;36m[Klong __n[m[K)
+[2.362s]       |                  [01;36m[K~~~~~^~~[m[K
+[2.363s] [01m[K/usr/include/c++/9/ostream:170:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.363s]   170 |       [01;36m[Koperator[m[K<<(unsigned long __n)
+[2.363s]       |       [01;36m[K^~~~~~~~[m[K
+[2.363s] [01m[K/usr/include/c++/9/ostream:170:32:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Klong unsigned int[m[K’
+[2.363s]   170 |       operator<<([01;36m[Kunsigned long __n[m[K)
+[2.363s]       |                  [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[2.363s] [01m[K/usr/include/c++/9/ostream:174:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.363s]   174 |       [01;36m[Koperator[m[K<<(bool __n)
+[2.363s]       |       [01;36m[K^~~~~~~~[m[K
+[2.368s] [01m[K/usr/include/c++/9/ostream:174:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kbool[m[K’
+[2.368s]   174 |       operator<<([01;36m[Kbool __n[m[K)
+[2.368s]       |                  [01;36m[K~~~~~^~~[m[K
+[2.369s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[2.369s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.369s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.369s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.369s] [01m[K/usr/include/c++/9/bits/ostream.tcc:91:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[2.370s]    91 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[2.370s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.370s] [01m[K/usr/include/c++/9/bits/ostream.tcc:92:22:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kshort int[m[K’
+[2.370s]    92 |     operator<<([01;36m[Kshort __n[m[K)
+[2.370s]       |                [01;36m[K~~~~~~^~~[m[K
+[2.370s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.370s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.370s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.371s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.371s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.371s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.371s] [01m[K/usr/include/c++/9/ostream:181:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.371s]   181 |       [01;36m[Koperator[m[K<<(unsigned short __n)
+[2.372s]       |       [01;36m[K^~~~~~~~[m[K
+[2.372s] [01m[K/usr/include/c++/9/ostream:181:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kshort unsigned int[m[K’
+[2.372s]   181 |       operator<<([01;36m[Kunsigned short __n[m[K)
+[2.372s]       |                  [01;36m[K~~~~~~~~~~~~~~~^~~[m[K
+[2.372s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[2.372s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.372s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.372s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.372s] [01m[K/usr/include/c++/9/bits/ostream.tcc:105:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+[2.373s]   105 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[2.373s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.373s] [01m[K/usr/include/c++/9/bits/ostream.tcc:106:20:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kint[m[K’
+[2.373s]   106 |     operator<<([01;36m[Kint __n[m[K)
+[2.373s]       |                [01;36m[K~~~~^~~[m[K
+[2.373s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.373s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.373s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.373s] [01m[K/usr/include/c++/9/ostream:192:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.374s]   192 |       [01;36m[Koperator[m[K<<(unsigned int __n)
+[2.374s]       |       [01;36m[K^~~~~~~~[m[K
+[2.374s] [01m[K/usr/include/c++/9/ostream:192:31:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kunsigned int[m[K’
+[2.374s]   192 |       operator<<([01;36m[Kunsigned int __n[m[K)
+[2.374s]       |                  [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[2.374s] [01m[K/usr/include/c++/9/ostream:201:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.374s]   201 |       [01;36m[Koperator[m[K<<(long long __n)
+[2.374s]       |       [01;36m[K^~~~~~~~[m[K
+[2.374s] [01m[K/usr/include/c++/9/ostream:201:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Klong long int[m[K’
+[2.374s]   201 |       operator<<([01;36m[Klong long __n[m[K)
+[2.374s]       |                  [01;36m[K~~~~~~~~~~^~~[m[K
+[2.374s] [01m[K/usr/include/c++/9/ostream:205:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.375s]   205 |       [01;36m[Koperator[m[K<<(unsigned long long __n)
+[2.375s]       |       [01;36m[K^~~~~~~~[m[K
+[2.375s] [01m[K/usr/include/c++/9/ostream:205:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Klong long unsigned int[m[K’
+[2.375s]   205 |       operator<<([01;36m[Kunsigned long long __n[m[K)
+[2.375s]       |                  [01;36m[K~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.375s] [01m[K/usr/include/c++/9/ostream:220:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.375s]   220 |       [01;36m[Koperator[m[K<<(double __f)
+[2.375s]       |       [01;36m[K^~~~~~~~[m[K
+[2.375s] [01m[K/usr/include/c++/9/ostream:220:25:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kdouble[m[K’
+[2.375s]   220 |       operator<<([01;36m[Kdouble __f[m[K)
+[2.376s]       |                  [01;36m[K~~~~~~~^~~[m[K
+[2.376s] [01m[K/usr/include/c++/9/ostream:224:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.376s]   224 |       [01;36m[Koperator[m[K<<(float __f)
+[2.376s]       |       [01;36m[K^~~~~~~~[m[K
+[2.376s] [01m[K/usr/include/c++/9/ostream:224:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kfloat[m[K’
+[2.376s]   224 |       operator<<([01;36m[Kfloat __f[m[K)
+[2.376s]       |                  [01;36m[K~~~~~~^~~[m[K
+[2.376s] [01m[K/usr/include/c++/9/ostream:232:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.376s]   232 |       [01;36m[Koperator[m[K<<(long double __f)
+[2.376s]       |       [01;36m[K^~~~~~~~[m[K
+[2.377s] [01m[K/usr/include/c++/9/ostream:232:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Klong double[m[K’
+[2.377s]   232 |       operator<<([01;36m[Klong double __f[m[K)
+[2.377s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[2.377s] [01m[K/usr/include/c++/9/ostream:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>][m[K’
+[2.377s]   245 |       [01;36m[Koperator[m[K<<(const void* __p)
+[2.377s]       |       [01;36m[K^~~~~~~~[m[K
+[2.377s] [01m[K/usr/include/c++/9/ostream:245:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kconst void*[m[K’
+[2.377s]   245 |       operator<<([01;36m[Kconst void* __p[m[K)
+[2.377s]       |                  [01;36m[K~~~~~~~~~~~~^~~[m[K
+[2.377s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[2.377s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.378s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.378s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.378s] [01m[K/usr/include/c++/9/bits/ostream.tcc:119:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>][m[K’
+[2.378s]   119 |     [01;36m[Kbasic_ostream<_CharT, _Traits>[m[K::
+[2.378s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.379s] [01m[K/usr/include/c++/9/bits/ostream.tcc:120:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kstd::basic_ostream<char>::__streambuf_type*[m[K’ {aka ‘[01m[Kstd::basic_streambuf<char>*[m[K’}
+[2.379s]   120 |     operator<<([01;36m[K__streambuf_type* __sbin[m[K)
+[2.379s]       |                [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[2.379s] In file included from [01m[K/usr/include/c++/9/string:55[m[K,
+[2.379s]                  from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+[2.380s]                  from [01m[K/usr/include/c++/9/array:39[m[K,
+[2.380s]                  from [01m[K/usr/include/c++/9/tuple:39[m[K,
+[2.380s]                  from [01m[K/usr/include/c++/9/bits/unique_ptr.h:37[m[K,
+[2.380s]                  from [01m[K/usr/include/c++/9/memory:80[m[K,
+[2.380s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.380s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.381s] [01m[K/usr/include/c++/9/bits/basic_string.h:6416:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)[m[K’
+[2.381s]  6416 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[2.381s]       |     [01;36m[K^~~~~~~~[m[K
+[2.381s] [01m[K/usr/include/c++/9/bits/basic_string.h:6416:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.381s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+[2.381s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.382s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.382s] In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+[2.382s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:144[m[K,
+[2.382s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.382s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:66:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[2.382s]    66 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[2.382s]       |     [01;36m[K^~~~~~~~[m[K
+[2.383s] [01m[K/usr/include/c++/9/bits/shared_ptr.h:66:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.383s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ is not derived from ‘[01m[Kconst std::__shared_ptr<_Tp, _Lp>[m[K’
+[2.383s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.383s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.383s] In file included from [01m[K/usr/include/c++/9/mutex:42[m[K,
+[2.384s]                  from [01m[K/usr/include/c++/9/future:38[m[K,
+[2.384s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[2.384s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.384s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.384s] [01m[K/usr/include/c++/9/system_error:217:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)[m[K’
+[2.384s]   217 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[2.384s]       |     [01;36m[K^~~~~~~~[m[K
+[2.385s] [01m[K/usr/include/c++/9/system_error:217:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.385s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kconst std::error_code&[m[K’
+[2.385s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.385s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.385s] In file included from [01m[K/usr/include/c++/9/future:39[m[K,
+[2.385s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:18[m[K,
+[2.386s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.386s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.386s] [01m[K/usr/include/c++/9/thread:322:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::thread::id)[m[K’
+[2.386s]   322 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[2.386s]       |     [01;36m[K^~~~~~~~[m[K
+[2.386s] [01m[K/usr/include/c++/9/thread:322:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.387s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kstd::thread::id[m[K’
+[2.387s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.387s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.387s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.387s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.387s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.388s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.388s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.388s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.388s] [01m[K/usr/include/c++/9/ostream:506:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)[m[K’
+[2.389s]   506 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[2.389s]       |     [01;36m[K^~~~~~~~[m[K
+[2.389s] [01m[K/usr/include/c++/9/ostream:506:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.389s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_CharT[m[K’ (‘[01m[Kchar[m[K’ and ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’)
+[2.389s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.389s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.389s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.389s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.390s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.390s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.390s] [01m[K/usr/include/c++/9/ostream:511:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)[m[K’
+[2.390s]   511 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[2.390s]       |     [01;36m[K^~~~~~~~[m[K
+[2.390s] [01m[K/usr/include/c++/9/ostream:511:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.391s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kchar[m[K’
+[2.391s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.391s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.391s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.391s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.391s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.391s] [01m[K/usr/include/c++/9/ostream:517:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[2.392s]   517 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[2.392s]       |     [01;36m[K^~~~~~~~[m[K
+[2.392s] [01m[K/usr/include/c++/9/ostream:517:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.392s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kchar[m[K’
+[2.392s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.392s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.392s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.392s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.393s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.393s] [01m[K/usr/include/c++/9/ostream:523:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[2.393s]   523 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[2.393s]       |     [01;36m[K^~~~~~~~[m[K
+[2.393s] [01m[K/usr/include/c++/9/ostream:523:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.393s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Ksigned char[m[K’
+[2.393s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.393s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.393s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.393s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.394s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.394s] [01m[K/usr/include/c++/9/ostream:528:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[2.394s]   528 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[2.394s]       |     [01;36m[K^~~~~~~~[m[K
+[2.394s] [01m[K/usr/include/c++/9/ostream:528:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.394s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kunsigned char[m[K’
+[2.394s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.394s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.394s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.394s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.395s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.395s] [01m[K/usr/include/c++/9/ostream:548:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)[m[K’
+[2.395s]   548 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[2.395s]       |     [01;36m[K^~~~~~~~[m[K
+[2.395s] [01m[K/usr/include/c++/9/ostream:548:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.395s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’
+[2.395s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.395s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.395s] In file included from [01m[K/usr/include/c++/9/ostream:702[m[K,
+[2.395s]                  from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.395s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.396s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.396s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.396s] [01m[K/usr/include/c++/9/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)[m[K’
+[2.396s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[2.396s]       |     [01;36m[K^~~~~~~~[m[K
+[2.396s] [01m[K/usr/include/c++/9/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.396s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kconst char*[m[K’
+[2.396s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.396s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.396s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.397s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.397s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.397s] [01m[K/usr/include/c++/9/ostream:565:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[2.397s]   565 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[2.397s]       |     [01;36m[K^~~~~~~~[m[K
+[2.397s] [01m[K/usr/include/c++/9/ostream:565:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.397s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kconst char*[m[K’
+[2.397s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.397s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.398s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.398s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.398s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.398s] [01m[K/usr/include/c++/9/ostream:578:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[2.398s]   578 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[2.398s]       |     [01;36m[K^~~~~~~~[m[K
+[2.398s] [01m[K/usr/include/c++/9/ostream:578:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.398s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kconst signed char*[m[K’
+[2.399s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.399s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.399s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.399s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.399s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.399s] [01m[K/usr/include/c++/9/ostream:583:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[2.399s]   583 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[2.400s]       |     [01;36m[K^~~~~~~~[m[K
+[2.400s] [01m[K/usr/include/c++/9/ostream:583:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.400s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kbind_func_OBJ[m[K’ (type ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’) to type ‘[01m[Kconst unsigned char*[m[K’
+[2.400s]    21 |         std::cout << "std::bind(&MyNode::timer_callback, this)= " << [01;36m[Kbind_func_OBJ[m[K << '\n';
+[2.400s]       |                                                                      [01;36m[K^~~~~~~~~~~~~[m[K
+[2.400s] In file included from [01m[K/usr/include/c++/9/iostream:39[m[K,
+[2.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:22[m[K,
+[2.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.400s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.400s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.400s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[2.401s]   691 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[2.401s]       |     [01;36m[K^~~~~~~~[m[K
+[2.401s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.401s] /usr/include/c++/9/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> typename std::enable_if<std::__and_<std::__not_<std::is_lvalue_reference<_Tp> >, std::__is_convertible_to_basic_ostream<_Ostream>, std::__is_insertable<typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type, const _Tp&, void> >::value, typename std::__is_convertible_to_basic_ostream<_Tp>::__ostream_type>::type std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::_Bind<void (MyNode::*(MyNode*))()>][m[K’:
+[2.401s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:21:70:[m[K   required from here
+[2.401s] [01m[K/usr/include/c++/9/ostream:691:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::basic_ostream<char>&>[m[K’
+[2.401s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:34[m[K,
+[2.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.402s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.402s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::FutureReturnCode&)[m[K’
+[2.402s]    38 | [01;36m[Koperator[m[K<<(std::ostream & os, const FutureReturnCode & future_return_code);
+[2.402s]       | [01;36m[K^~~~~~~~[m[K
+[2.402s] [01m[K/opt/ros/foxy/include/rclcpp/future_return_code.hpp:38:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kconst rclcpp::FutureReturnCode&[m[K’
+[2.402s]    38 | operator<<(std::ostream & os, [01;36m[Kconst FutureReturnCode & future_return_code[m[K);
+[2.402s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[2.402s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:26[m[K,
+[2.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[2.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[2.402s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.403s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.403s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, rclcpp::ParameterType)[m[K’
+[2.403s]    53 | [01;36m[Koperator[m[K<<(std::ostream & os, ParameterType type);
+[2.403s]       | [01;36m[K^~~~~~~~[m[K
+[2.403s] [01m[K/opt/ros/foxy/include/rclcpp/parameter_value.hpp:53:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Krclcpp::ParameterType[m[K’
+[2.403s]    53 | operator<<(std::ostream & os, [01;36m[KParameterType type[m[K);
+[2.403s]       |                               [01;36m[K~~~~~~~~~~~~~~^~~~[m[K
+[2.403s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[2.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:51[m[K,
+[2.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.403s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[2.404s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.404s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:2[m[K:
+[2.404s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const rclcpp::Parameter&)[m[K’
+[2.404s]   226 | [01;36m[Koperator[m[K<<(std::ostream & os, const rclcpp::Parameter & pv);
+[2.404s]       | [01;36m[K^~~~~~~~[m[K
+[2.404s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:226:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kconst rclcpp::Parameter&[m[K’
+[2.404s]   226 | operator<<(std::ostream & os, [01;36m[Kconst rclcpp::Parameter & pv[m[K);
+[2.404s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[2.404s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ostream& rclcpp::operator<<(std::ostream&, const std::vector<rclcpp::Parameter>&)[m[K’
+[2.404s]   230 | [01;36m[Koperator[m[K<<(std::ostream & os, const std::vector<Parameter> & parameters);
+[2.404s]       | [01;36m[K^~~~~~~~[m[K
+[2.404s] [01m[K/opt/ros/foxy/include/rclcpp/parameter.hpp:230:62:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kstd::_Bind<void (MyNode::*(MyNode*))()>[m[K’ to ‘[01m[Kconst std::vector<rclcpp::Parameter>&[m[K’
+[2.404s]   230 | operator<<(std::ostream & os, [01;36m[Kconst std::vector<Parameter> & parameters[m[K);
+[2.404s]       |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[3.029s] make[2]: *** [CMakeFiles/cpp_node.dir/build.make:63: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1
+[3.030s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_node.dir/all] Error 2
+[3.030s] make: *** [Makefile:141: all] Error 2
+[3.032s] Invoked command in '/home/sz/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2

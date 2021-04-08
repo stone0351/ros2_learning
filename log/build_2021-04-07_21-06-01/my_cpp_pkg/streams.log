@@ -1,0 +1,14 @@
+[0.027s] Invoking command in '/home/sz/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.097s] [35m[1mScanning dependencies of target cpp_node[0m
+[0.145s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[2.096s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[2.096s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:16:41:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MyNode::timer_callback()[m[K’
+[2.096s]    16 |         rclcpp::create_timer(0.5, [01;31m[Kthis->timer_callback[m[K);
+[2.096s]       |                                   [01;31m[K~~~~~~^~~~~~~~~~~~~~[m[K
+[2.096s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:19:10:[m[K [01;36m[Knote: [m[Kdeclared here
+[2.097s]    19 |     void [01;36m[Ktimer_callback[m[K() {
+[2.097s]       |          [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.678s] make[2]: *** [CMakeFiles/cpp_node.dir/build.make:63: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1
+[2.678s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_node.dir/all] Error 2
+[2.678s] make: *** [Makefile:141: all] Error 2
+[2.684s] Invoked command in '/home/sz/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2

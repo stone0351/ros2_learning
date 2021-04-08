@@ -1,0 +1,15 @@
+[0.026s] Invoking command in '/home/sz/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.104s] [35m[1mScanning dependencies of target cpp_node[0m
+[0.162s] [ 50%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[2.161s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[2.161s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:16:57:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+[2.161s]    16 |         rclcpp::create_timer(0.5, this->timer_callback()[01;31m[K)[m[K;
+[2.161s]       |                                                         [01;31m[K^[m[K
+[2.162s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In member function ‘[01m[Kvoid MyNode::timer_callback()[m[K’:
+[2.162s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:22:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+[2.162s]    22 |         [01;31m[Kpublic[m[K: counter_ += 1;
+[2.162s]       |         [01;31m[K^~~~~~[m[K
+[2.768s] make[2]: *** [CMakeFiles/cpp_node.dir/build.make:63: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1
+[2.768s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_node.dir/all] Error 2
+[2.769s] make: *** [Makefile:141: all] Error 2
+[2.774s] Invoked command in '/home/sz/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2

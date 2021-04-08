@@ -1,0 +1,11 @@
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:16:57:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+   16 |         rclcpp::create_timer(0.5, this->timer_callback()[01;31m[K)[m[K;
+      |                                                         [01;31m[K^[m[K
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:[m[K In member function ‘[01m[Kvoid MyNode::timer_callback()[m[K’:
+[01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/my_first_node.cpp:22:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+   22 |         [01;31m[Kpublic[m[K: counter_ += 1;
+      |         [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/cpp_node.dir/build.make:63: CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/cpp_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

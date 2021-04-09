@@ -8,6 +8,7 @@ class MyNode(Node):
         super().__init__("py_test")
         self.counter_ = 0
         self.get_logger().info("Hello ROS2")
+        # self.timer_callback is callback function, without parentheses
         self.create_timer(0.5, self.timer_callback)
 
     def timer_callback(self):

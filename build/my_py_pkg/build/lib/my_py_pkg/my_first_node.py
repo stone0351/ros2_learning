@@ -4,6 +4,7 @@ from rclpy.node import Node
 
 class MyNode(Node):
     def __init__(self):
+        # "py_test" is super class Node argument input
         super().__init__("py_test")
         self.counter_ = 0
         self.get_logger().info("Hello ROS2")

@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target smartphone[0m
+[ 33%] Built target robot_news_station
+[ 50%] [32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o[0m
+[ 83%] Built target cpp_node

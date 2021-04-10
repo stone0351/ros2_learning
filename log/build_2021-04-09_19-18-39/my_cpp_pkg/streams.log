@@ -1,0 +1,39 @@
+[0.038s] Invoking command in '/home/sz/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.088s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.146s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.433s] -- Found rclcpp: 2.3.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.482s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.487s] -- Found rosidl_adapter: 1.2.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.659s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.729s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.730s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.928s] -- Found example_interfaces: 0.9.0 (/opt/ros/foxy/share/example_interfaces/cmake)
+[1.160s] -- Configuring done
+[1.187s] -- Generating done
+[1.190s] -- Build files have been written to: /home/sz/ros2_ws/build/my_cpp_pkg
+[1.231s] [35m[1mScanning dependencies of target smartphone[0m
+[1.232s] [35m[1mScanning dependencies of target robot_news_station[0m
+[1.282s] [ 16%] [32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o[0m
+[1.308s] [ 33%] [32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o[0m
+[4.169s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:[m[K In constructor ‘[01m[KSmartphoneNode::SmartphoneNode()[m[K’:
+[4.169s] [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:17:84:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+[4.169s]    17 |         auto call_back_OBJ = std::bind(&SmartphoneNode::callback_robot_news, this, [01;31m[K_1[m[K);
+[4.169s]       |                                                                                    [01;31m[K^~[m[K
+[4.169s]       |                                                                                    [32m[Kstd::placeholders::_1[m[K
+[4.169s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/context.hpp:19[m[K,
+[4.169s]                  from [01m[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18[m[K,
+[4.169s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:32[m[K,
+[4.170s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.170s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.170s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.170s]                  from [01m[K/home/sz/ros2_ws/src/my_cpp_pkg/src/smartphone.cpp:2[m[K:
+[4.170s] [01m[K/usr/include/c++/9/functional:211:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+[4.170s]   211 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+[4.170s]       |                                  [01;36m[K^~[m[K
+[5.016s] make[2]: *** [CMakeFiles/smartphone.dir/build.make:63: CMakeFiles/smartphone.dir/src/smartphone.cpp.o] Error 1
+[5.017s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/smartphone.dir/all] Error 2
+[5.017s] make[1]: *** Waiting for unfinished jobs....
+[6.903s] [ 50%] [32m[1mLinking CXX executable robot_news_station[0m
+[7.258s] [ 50%] Built target robot_news_station
+[7.260s] make: *** [Makefile:141: all] Error 2
+[7.266s] Invoked command in '/home/sz/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sz/ros2_ws/install/my_py_pkg:/opt/ros/foxy /usr/bin/cmake --build /home/sz/ros2_ws/build/my_cpp_pkg -- -j2 -l2

@@ -1,4 +1,6 @@
 /home/sz/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+/home/sz/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+/home/sz/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
 /home/sz/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
 /home/sz/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
 /home/sz/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
